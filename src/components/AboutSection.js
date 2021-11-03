@@ -6,41 +6,22 @@ import { Layout, Description, Image, Hide } from "../styles";
 import { motion } from "framer-motion";
 
 const AboutSection = () => {
-	//Animation variants
-	const titleAnim = {
-		hidden: { opacity: 0 },
-		show: { opacity: 1, transition: { duration: 2 } },
-	};
-	const container = {
-		hidden: { x: 100 },
-		show: {
-			x: 0,
-			transition: { duration: 1, ease: "easeOut", staggerChildren: 1 },
-		},
-	};
-
 	return (
 		<Layout>
 			<Description>
-				<motion.div
-					variants={container}
-					initial="hidden"
-					animate="show"
-					className="title"
-				>
-					{" "}
+				<div>
 					<Hide>
-						<motion.h2 variants={titleAnim}>We work to make</motion.h2>
+						<h2>We work to make</h2>
 					</Hide>
 					<Hide>
-						<motion.h2 variants={titleAnim}>
+						<h2>
 							your <span>dreams</span>
-						</motion.h2>
+						</h2>
 					</Hide>
 					<Hide>
-						<motion.h2 variants={titleAnim}>come true.</motion.h2>
+						<h2>come true.</h2>
 					</Hide>
-				</motion.div>
+				</div>
 				<p>
 					Contact us for every photography or videography idead that you have.
 					We have professionals with amazing skills to help you achieve it.
