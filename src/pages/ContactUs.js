@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Layout } from "../styles";
 //Animations
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnim } from "./animation";

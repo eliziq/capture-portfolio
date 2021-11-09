@@ -34,6 +34,9 @@ const StyledNav = styled.nav`
 	padding: 1rem 10rem;
 	background: #282828;
 	color: white;
+	position: sticky;
+	top: 0;
+	z-index: 10;
 
 	ul {
 		list-style: none;

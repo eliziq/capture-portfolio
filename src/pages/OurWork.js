@@ -8,6 +8,7 @@ import theracer from "../img/theracer-small.png";
 //Animations
 import { motion } from "framer-motion";
 import { useScroll } from "../components/useScroll";
+import ScrollTop from "../components/ScrollTop";
 import {
 	pageAnimation,
 	fade,
@@ -64,6 +65,7 @@ const OurWork = () => {
 					<img src={theracer} alt="athlete" />
 				</Link>
 			</Movie>
+			<ScrollTop />
 		</Work>
 	);
 };
