@@ -37,6 +37,7 @@ const StyledNav = styled.nav`
 	position: sticky;
 	top: 0;
 	z-index: 10;
+	/* width: 100%; */
 
 	ul {
 		list-style: none;
@@ -54,6 +55,24 @@ const StyledNav = styled.nav`
 	li {
 		padding-left: 10rem;
 		position: relative;
+	}
+	@media (max-width: 1200px) {
+		flex-direction: column;
+		padding: 1rem;
+		/* width: 100%; */
+		ul {
+			padding: 2rem;
+			justify-content: space-around;
+			width: 100%;
+			li {
+				padding: 0;
+			}
+		}
+		#logo {
+			/* padding: 2rem; */
+			display: inline-block;
+			margin-top: 1rem;
+		}
 	}
 `;
 

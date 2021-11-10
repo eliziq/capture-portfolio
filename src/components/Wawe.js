@@ -26,6 +26,9 @@ const WaweSvg = styled.svg`
 	position: absolute;
 	left: 0;
 	z-index: 1;
+	@media (max-width: 1200px) {
+		display: none;
+	}
 `;
 
 export default Wawe;
